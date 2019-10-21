@@ -23,7 +23,7 @@ end
 
 def win_or_lose(result)
   if result == "Win"
-    @points += 3
+    @points += 2
   end
 end
 
