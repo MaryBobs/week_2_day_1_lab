@@ -6,23 +6,23 @@ class TestSportsTeam < MiniTest::Test
 
 def test_get_team_name
   team_name = SportsTeam.new("Ducks United", ["Fred", "Joe"], "Sandy")
-  assert_equal("Ducks United", team_name.get_team_name)
+  assert_equal("Ducks United", team_name.team_name)
 end
 
 def test_get_players
   players = SportsTeam.new("Ducks United", ["Fred", "Joe"], "Sandy")
-  assert_equal(["Fred", "Joe"], players.get_players)
+  assert_equal(["Fred", "Joe"], players.players)
 end
 
 def test_get_coach
   coach = SportsTeam.new("Ducks United", ["Fred", "Joe"], "Sandy")
-  assert_equal("Sandy", coach.get_coach)
+  assert_equal("Sandy", coach.coach)
 end
 
 def test_update_coach
   coach = SportsTeam.new("Ducks United", ["Fred", "Joe"], "Sandy")
-  coach.set_coach("Eugene")
-  assert_equal("Eugene", coach.get_coach)
+  coach.coach = "Eugene"
+  assert_equal("Eugene", coach.coach)
 end
 
 
