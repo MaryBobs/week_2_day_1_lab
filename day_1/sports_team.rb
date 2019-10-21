@@ -10,7 +10,14 @@ def initialize(team_name, players, coach)
   @coach = coach
 end
 
+def add_new_player(name)
+  @players << "Pete"
+end
 
-
+def find_player(name)
+    if @players.include?(name)
+      return true
+    end
+end
 
 end

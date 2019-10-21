@@ -25,6 +25,17 @@ def test_update_coach
   assert_equal("Eugene", coach.coach)
 end
 
+def test_add_new_player
+    players = SportsTeam.new("Ducks United", ["Fred", "Joe"], "Sandy")
+    players.add_new_player("Pete")
+    assert_equal(3, players.players.count)
+end
+
+def test_find_player
+  players = SportsTeam.new("Ducks United", ["Fred", "Joe"], "Sandy")
+  players.find_player("Fred")
+  assert_equal('Fred', players.players[0])
+end
 
 
 
