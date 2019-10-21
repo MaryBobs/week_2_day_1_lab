@@ -19,6 +19,9 @@ def get_coach
   return @coach
 end
 
+def set_coach(coach)
+  return @coach = coach
+end
 
 
 

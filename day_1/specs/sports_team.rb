@@ -19,6 +19,12 @@ def test_get_coach
   assert_equal("Sandy", coach.get_coach)
 end
 
+def test_update_coach
+  coach = SportsTeam.new("Ducks United", ["Fred", "Joe"], "Sandy")
+  coach.set_coach("Eugene")
+  assert_equal("Eugene", coach.get_coach)
+end
+
 
 
 
