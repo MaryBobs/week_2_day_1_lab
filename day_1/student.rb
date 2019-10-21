@@ -25,7 +25,9 @@ def student_talk
   return "I can talk"
 end
 
-
+def student_fav_lang(language)
+  return "I love #{language}"
+end
 
 
 
